@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.CargosController">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="576.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="89.0" text="Codigo Cargo" />
+      <Label layoutX="43.0" layoutY="143.0" text="Nombre Cargo" />
+      <ComboBox fx:id="cmbCodigoCargo" layoutX="153.0" layoutY="84.0" prefWidth="150.0" />
+      <TextField fx:id="txtNombreCargo" disable="true" layoutX="145.0" layoutY="138.0" />
+      <TableView fx:id="tblCargo" layoutX="46.0" layoutY="200.0" onMouseClicked="#seleccionar" prefHeight="169.0" prefWidth="257.0">
+        <columns>
+          <TableColumn fx:id="colCodigoCargo" prefWidth="114.0" text="Codigo Cargo" />
+          <TableColumn fx:id="colNombreCargo" prefWidth="140.0" text="Nombre Cargo" />
+        </columns>
+      </TableView>
+      <Label layoutX="269.0" layoutY="33.0" text="Cargos">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="378.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3d71188c55922ea5cef056f9aeb042f2-icono-de-perfil-de-doctor-by-vexels.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="312.0" layoutY="67.0" onAction="#menuPrincipalProgramador" text="Menu Responsable Turno">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="btnAgregar" layoutX="59.0" layoutY="379.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnModificar" layoutX="124.0" layoutY="379.0" mnemonicParsing="false" onAction="#editar" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="211.0" layoutY="379.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="281.0" layoutY="379.0" mnemonicParsing="false" text="Reporte" />
+   </children>
+</AnchorPane>

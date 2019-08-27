@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.ProgramadorController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="611.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="262.0" text="Programador " textFill="#d6f500">
+         <font>
+            <Font name="Franklin Gothic Demi" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="265.0" text="Luis Fernando Garcia Ramirez" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="241.0" textFill="#90bf39">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="307.0" text="0.2" textFill="#fffffe">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="306.0" text="version:" textFill="#d6f500">
+         <font>
+            <Font name="Franklin Gothic Demi" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="261.0" textFill="#d6f500">
+         <font>
+            <Font name="Franklin Gothic Demi" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="367.0" text="\@2019 curso de netBeans " textFill="#fffffe">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="408.0" layoutY="21.0" onAction="#menuPrincipalProgramador" text="Menu Principal" textFill="#98b01a">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="233.0" layoutY="21.0" text="Programador" textFill="#fffffe">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="176.0" fitWidth="168.0" layoutX="215.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3d71188c55922ea5cef056f9aeb042f2-icono-de-perfil-de-doctor-by-vexels.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="185.0" layoutX="427.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logollama.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

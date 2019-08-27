@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.ControlCitasController">
+   <children>
+      <ImageView fitHeight="494.0" fitWidth="657.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="259.0" layoutY="14.0" text="Control Citas">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="72.0" text="Codigo Control Citas">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="128.0" text="fecha">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="170.0" text="hora Inicio">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbControlCitas" layoutX="204.0" layoutY="73.0" prefWidth="150.0" />
+      <GridPane fx:id="grpFecha" layoutX="154.0" layoutY="126.0" prefHeight="30.0" prefWidth="175.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <DatePicker fx:id="dtpFecha" disable="true" />
+         </children>
+      </GridPane>
+      <Label layoutX="56.0" layoutY="221.0" text="hora Fin">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="337.0" layoutY="182.0" text="codigo Medico">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="221.0" text="codigo Pacientes">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraInicio" disable="true" layoutX="154.0" layoutY="170.0" />
+      <TextField fx:id="txtHoraFin" disable="true" layoutX="154.0" layoutY="221.0" />
+      <ImageView fitHeight="113.0" fitWidth="135.0" layoutX="424.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/d000dfd1507967f5ae618827a0fec017-icono-de-horario-medico-by-vexels.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbcodigo" layoutX="473.0" layoutY="182.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbcodigoPacientes" layoutX="473.0" layoutY="221.0" prefWidth="150.0" />
+      <TableView fx:id="tblControlCitas" layoutX="28.0" layoutY="267.0" onMouseClicked="#seleccionar" prefHeight="200.0" prefWidth="521.0">
+        <columns>
+          <TableColumn fx:id="codControlCitas" prefWidth="90.0" text="Cod Control Citas" />
+          <TableColumn fx:id="fecha" prefWidth="87.0" text="Fecha" />
+            <TableColumn fx:id="horaInicio" prefWidth="82.0" text="Hora Inicio" />
+            <TableColumn fx:id="horaFin" prefWidth="82.0" text="Hora Fin" />
+            <TableColumn fx:id="codMedico" prefWidth="89.0" text="Cod Medico" />
+            <TableColumn fx:id="codPacientes" prefWidth="90.0" text="Cod Pacientes" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnagregar" layoutX="571.0" layoutY="274.0" mnemonicParsing="false" onAction="#nuevo" text="Añadir" />
+      <Button fx:id="btnmodificar" layoutX="571.0" layoutY="312.0" mnemonicParsing="false" onAction="#edit" text="Modificar" />
+      <Button fx:id="btneliminar" layoutX="571.0" layoutY="348.0" mnemonicParsing="false" onAction="#Eliminar" text="Eliminar" />
+      <Button fx:id="btnreporte" layoutX="571.0" layoutY="391.0" mnemonicParsing="false" onAction="#imprimirReporte" text="Reporte" />
+      <Button layoutX="30.0" layoutY="17.0" mnemonicParsing="false" onAction="#ventanaRecetas" text="Recetas" />
+      <Hyperlink layoutX="494.0" layoutY="25.0" onAction="#MenuMedicos" text="Menu Medicos ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

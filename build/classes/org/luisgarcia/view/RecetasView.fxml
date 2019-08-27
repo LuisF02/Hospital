@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.RecetasController">
+   <children>
+      <ImageView fitHeight="439.0" fitWidth="533.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="14.0" text="Recetas">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="79.0" text="codigoReceta">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCodReceta" layoutX="159.0" layoutY="80.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="129.0" text="descripcion Receta">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="178.0" text="codigo Control Cita">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescripcionReceta" layoutX="208.0" layoutY="130.0" />
+      <ComboBox fx:id="cmbControlCitas" layoutX="215.0" layoutY="179.0" prefWidth="150.0" />
+      <ImageView fitHeight="117.0" fitWidth="124.0" layoutX="390.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/f1d0807f8ffad0197757d840bdc97d0b-icono-de-registro-medico-by-vexels.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblRecetas" layoutX="34.0" layoutY="218.0" onMouseClicked="#seleccionar" prefHeight="200.0" prefWidth="278.0">
+        <columns>
+          <TableColumn fx:id="codReceta" prefWidth="75.0" text="Cod Receta" />
+          <TableColumn fx:id="descripcionReceta" prefWidth="137.0" text="Descripcion Receta" />
+            <TableColumn fx:id="codCita" prefWidth="62.0" text="Cod Cita" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnagregar" layoutX="345.0" layoutY="241.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnmodificar" layoutX="337.0" layoutY="277.0" mnemonicParsing="false" text="Modificar" />
+      <Button fx:id="btneliminar" layoutX="341.0" layoutY="312.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnreporte" layoutX="341.0" layoutY="348.0" mnemonicParsing="false" text="Reporte" />
+      <Hyperlink layoutX="380.0" layoutY="36.0" onAction="#MenuPrincipalControlCitas" text="Menu Control Citas">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

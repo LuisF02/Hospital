@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.HorariosController">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="661.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="248.0" layoutY="25.0" text="Horarios">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCodigoHorario" layoutX="186.0" layoutY="61.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="61.0" text="Codigo Horario">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="494.0" layoutY="41.0" onAction="#menuPrincipalMedicos" text="Menu Medico ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="33.0" layoutY="111.0" text="Hora Inicio">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="157.0" text="Hora Salida">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraInicio" disable="true" layoutX="165.0" layoutY="111.0" />
+      <TextField fx:id="txtHoraSalida" disable="true" layoutX="165.0" layoutY="157.0" />
+      <Label layoutX="44.0" layoutY="199.0" text="Lunes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="89.0" text="Martes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLunes" disable="true" layoutX="155.0" layoutY="199.0" />
+      <TextField fx:id="txtMartes" disable="true" layoutX="473.0" layoutY="88.0" />
+      <TextField fx:id="txtMiercoles" disable="true" layoutX="473.0" layoutY="130.0" />
+      <Label layoutX="374.0" layoutY="131.0" text="Miercoles">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtJueves" disable="true" layoutX="473.0" layoutY="170.0" />
+      <Label layoutX="386.0" layoutY="170.0" text="Jueves">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="200.0" text="Viernes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtViernes" disable="true" layoutX="473.0" layoutY="200.0" />
+      <TableView fx:id="tblHorarios" layoutX="34.0" layoutY="236.0" onMouseClicked="#seleccionar" prefHeight="200.0" prefWidth="603.0">
+        <columns>
+          <TableColumn fx:id="colCodigoHorario" prefWidth="75.0" text="cod.Horario" />
+          <TableColumn fx:id="colInicio" prefWidth="75.0" text="H.Inicio" />
+            <TableColumn fx:id="colSalida" prefWidth="75.0" text="H.Salida" />
+            <TableColumn fx:id="colLunes" prefWidth="75.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="75.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" prefWidth="75.0" text="Miercoles" />
+            <TableColumn fx:id="colJueves" prefWidth="75.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="75.0" text="Viernes" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="43.0" layoutY="456.0" mnemonicParsing="false" onAction="#nuevo" text="Agregar" />
+      <Button fx:id="btnModificar" layoutX="121.0" layoutY="456.0" mnemonicParsing="false" onAction="#editar" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="201.0" layoutY="456.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="269.0" layoutY="456.0" mnemonicParsing="false" text="Reporte" />
+   </children>
+</AnchorPane>

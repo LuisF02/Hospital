@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisgarcia.controller.ResponsableTurnoController">
+   <children>
+      <ImageView fitHeight="484.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/ggggg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="14.0" text="Responsable Turno">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="448.0" layoutY="30.0" onAction="#menuPrincipalProgramador" text="Menu Turno">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="31.0" layoutY="16.0" mnemonicParsing="false" onAction="#ventanaAreas" text="Areas" />
+      <Button layoutX="96.0" layoutY="16.0" mnemonicParsing="false" onAction="#ventanaCargo" text="Cargos" />
+      <ComboBox fx:id="cmbCodigo" layoutX="182.0" layoutY="77.0" prefWidth="150.0" />
+      <Label layoutX="21.0" layoutY="82.0" text="Cod. Responsable Turno">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="174.0" layoutY="115.0" />
+      <Label layoutX="19.0" layoutY="120.0" text="Nombre Responsable" />
+      <Label layoutX="27.0" layoutY="160.0" text="Apellidos Responsable" />
+      <Label layoutX="41.0" layoutY="202.0" text="Telefono Personal" />
+      <TextField fx:id="txtApellido" layoutX="174.0" layoutY="155.0" />
+      <Label layoutX="368.0" layoutY="160.0" text="Codigo Cargo" />
+      <Label layoutX="372.0" layoutY="120.0" text="Codigo Area" />
+      <TextField fx:id="txtTelefono" layoutX="174.0" layoutY="197.0" />
+      <TableView fx:id="tblResponsable" layoutX="41.0" layoutY="235.0" prefHeight="200.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="130.0" text="Cod Responsable Turno" />
+          <TableColumn fx:id="colNombre" prefWidth="71.0" text="Nombre R" />
+            <TableColumn fx:id="colApellido" minWidth="0.0" prefWidth="76.0" text="Apellido R" />
+            <TableColumn fx:id="colTelefono" minWidth="6.0" prefWidth="85.0" text="Telefono R" />
+            <TableColumn fx:id="colArea" prefWidth="71.0" text="cod Area" />
+            <TableColumn fx:id="colCargo" prefWidth="90.0" text="Cod Cargo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="41.0" layoutY="443.0" mnemonicParsing="false" text="Nuevo" />
+      <Button fx:id="btnModificar" layoutX="102.0" layoutY="443.0" mnemonicParsing="false" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="184.0" layoutY="443.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="262.0" layoutY="443.0" mnemonicParsing="false" text="Reporte" />
+      <ComboBox fx:id="cmbArea" layoutX="464.0" layoutY="115.0" prefHeight="27.0" prefWidth="126.0" />
+      <ComboBox fx:id="cmbCargo" layoutX="464.0" layoutY="155.0" prefHeight="27.0" prefWidth="126.0" />
+   </children>
+</AnchorPane>
